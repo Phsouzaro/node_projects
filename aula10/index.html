@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Fomulário de Cadastro</h1>
+        <ul>
+            <li style='color: blue'>Nenhum campo pode estar vazio</li>
+            <li style='color: blue'>Usuário só poderá conter letras e/ou numeros</li>
+            <li style='color: blue'>Usuário precisa conter entre 3 a 12 caracteres</li>
+            <li style='color: blue'>Senha precisa ter entre 6 a 12 caracteres</li>
+        </ul>
+
+        <form action="">
+            <label for="txtNome">Nome:</label>
+            <input type="text" id='txtNome' value='Pedro'>
+            <label for="txtSobrenome">Sobrenome:</label>
+            <input type="text" id='txtSobrenome' value='souza'>
+            <label for="txtCpf">CPF: </label>
+            <input type="text" id='txtCpf' value='030.515.761-23'>
+            <label for="txtUser">Usuário:</label>
+            <input type="text" id='txtUser' value='phsouzaro' pattern="[a-z\s]+$">
+            <label for="txtSenha">Senha:</label>
+            <input type="password" id='txtSenha' value='Peter@132'>
+            <button class='btn env-form'>Enviar</button>
+        </form>
+        <div class="resultado">
+
+        </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
