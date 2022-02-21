@@ -5,6 +5,12 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        "[!a]*/**": true,
+        "a[!u]*/**": true,
+        "au[!l]*/**": true,
+        "aul[!a]*/**": true,
+        "aula[!1]*/**": true,
+        "aula1[!2]*/**": true
     }
 }
