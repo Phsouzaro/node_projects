@@ -1,15 +1,13 @@
-require('dotenv').config();
-const express = require('express') //importa o express para subir o servidor
-const app = express(); // executa o express para ser utilizado
+require('dotenv').config();//importa o arquivo de configuração e conexao da base de dados
+/*********************************************** */
+const express = require('express')
+const app = express(); //executa o express para ser utilizado
+/********************************************* */
 const mongoose = require('mongoose')//importa o mongoose
 mongoose.connect(process.env.CONNECTIONSTRING, {useNewUrlParser: true, useUnifiedTopology: true})//conecta na base de dados
-.then(() => {
-    console.log('Conectado na base de dados')
-    app.emit('pronto')
-})
-.catch((e) => {
-    console.log(`Erro ao conectar a base de dados: ${e}`)
-})
+.then(() => app.emit('pronto'))
+.catch((e) => console.log(`Erro ao conectar a base de dados: ${e}`))
+/********************************************* */
 const routes = require('./routes') //criacao das rotas
 const path = require('path'); // importa o path do node
 const { use } = require('./routes'); //utiliza as rotas
@@ -21,11 +19,6 @@ app.set('view engine', 'ejs')//usado para importar a engine de renderizacao como
 /************************************** */
 app.use(routes)//usado para definir as routes
 /************************************** */
-app.on('pronto', ()=>{
-    app.listen(3000, () => {
-        console.log('Servidor rodando na porta 3000, http://127.0.0.1:3000')
-    })//inicia o servidor na porta 3000
-})
-
-
+app.on('pronto', ()=> app.listen(3000, ()=>console.log('Servidor rodando na porta 3000, http://127.0.0.1:3000')))
+//inicia o servidor na porta 3000
 /******************************************** */
