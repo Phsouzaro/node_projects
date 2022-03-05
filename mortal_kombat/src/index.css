@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'mortal-kombat_2';
+  src: url('/home/pedro/Downloads/personalizacao/mortal_kombat_2/Mortal_Kombat_2/mk2.ttf');
+}
+body {
+  margin: 0;
+  font-family: 'mortal-kombat_2', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #202020;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

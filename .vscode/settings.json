@@ -6,11 +6,18 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "[!a]*/**": true,
-        "a[!u]*/**": true,
-        "au[!l]*/**": true,
-        "aul[!a]*/**": true,
-        "aula[!1]*/**": true,
-        "aula1[!2]*/**": true
+        "[!m]*/**": true,
+        "m[!o]*/**": true,
+        "mo[!r]*/**": true,
+        "mor[!t]*/**": true,
+        "mort[!a]*/**": true,
+        "morta[!l]*/**": true,
+        "mortal[!_]*/**": true,
+        "mortal_[!k]*/**": true,
+        "mortal_k[!o]*/**": true,
+        "mortal_ko[!m]*/**": true,
+        "mortal_kom[!b]*/**": true,
+        "mortal_komb[!a]*/**": true,
+        "mortal_komba[!t]*/**": true
     }
 }
